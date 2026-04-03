@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <title>Support — fAIrewall</title>
+  <meta name="description" content="Contact fAIrewall for Early Access, support, privacy, or security disclosures." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="fAIrewall home">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#shieldGrad)" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+          <circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+          <g fill="#ffffff" opacity="0.85"><rect x="22" y="24" width="20" height="2" rx="1"/><rect x="22" y="30" width="20" height="2" rx="1"/><rect x="22" y="36" width="14" height="2" rx="1"/></g>
+        </svg>
+        fAIrewall
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="security.html">Security</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html" style="color:var(--brand-700)">Support</a></li>
+          <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Support and Contact</h1>
+      <p>Need help, want to request Early Access, or have a question about fAIrewall? Contact us by email.</p>
+    </div>
+  </section>
+
+
+  <!-- ============ CONTENT ============ -->
+  <div class="page-content">
+    <div class="container">
+
+      <!-- Contact blocks -->
+      <div class="contact-grid fade-up">
+        <div class="contact-block">
+          <h3>Early Access</h3>
+          <a href="mailto:hello@fairewall.ai?subject=Early%20Access%20Request">hello@fairewall.ai</a>
+        </div>
+        <div class="contact-block">
+          <h3>Support</h3>
+          <a href="mailto:support@fairewall.ai">support@fairewall.ai</a>
+        </div>
+        <div class="contact-block">
+          <h3>Privacy</h3>
+          <a href="mailto:privacy@fairewall.ai">privacy@fairewall.ai</a>
+        </div>
+        <div class="contact-block">
+          <h3>Security Disclosures</h3>
+          <a href="mailto:security@fairewall.ai">security@fairewall.ai</a>
+        </div>
+      </div>
+
+      <div class="page-section fade-up">
+        <h2>Before you email us</h2>
+        <p>Please avoid sending highly sensitive information unless it is necessary for support. If you need to share logs or screenshots, only send what is relevant to the issue.</p>
+      </div>
+
+      <div class="page-section fade-up">
+        <h2>Early Access requests</h2>
+        <p>If you are requesting Early Access, a short note about your role, use case, and environment helps us prioritize the rollout.</p>
+      </div>
+
+      <div class="fade-up" style="margin-top:var(--space-12); text-align:center;">
+        <a href="mailto:support@fairewall.ai" class="btn btn-primary">Email support@fairewall.ai</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">fAIrewall</div>
+          <p>Local privacy firewall for AI.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="security.html">Security</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-meta">
+        <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
+        <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
+        <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { links.classList.toggle('open'); });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
