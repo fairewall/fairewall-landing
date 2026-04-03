@@ -10,55 +10,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <div class="container">
       <a href="/" class="site-logo" aria-label="fAIrewall home">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="hShieldG" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2d5a87"/>
-              <stop offset="100%" stop-color="#1e3a5f"/>
-            </linearGradient>
-            <linearGradient id="hHighG" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#5a9ad4"/>
-              <stop offset="100%" stop-color="#3d7ab0"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hShieldG)"/>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
-          <path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHighG)" stroke-width="1.5" opacity="0.6"/>
-          <g fill="#ffffff">
-            <rect x="29" y="24" width="6" height="24" rx="2"/>
-            <rect x="29" y="18" width="16" height="5" rx="2"/>
-            <rect x="25" y="30" width="14" height="5" rx="2"/>
-          </g>
-          <rect x="28" y="30" width="1" height="5" fill="#24547a"/>
-          <rect x="35" y="30" width="1" height="5" fill="#24547a"/>
-          <line x1="27" y1="22" x2="19" y2="38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+        <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="hSG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="hHG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a9ad4"/><stop offset="100%" stop-color="#3d7ab0"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hSG)"/><path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/><path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHG)" stroke-width="1.5" opacity="0.6"/>
+          <g fill="#fff"><rect x="29" y="24" width="6" height="24" rx="2"/><rect x="29" y="18" width="16" height="5" rx="2"/><rect x="25" y="30" width="14" height="5" rx="2"/></g>
+          <rect x="28" y="30" width="1" height="5" fill="#24547a"/><rect x="35" y="30" width="1" height="5" fill="#24547a"/>
+          <line x1="27" y1="22" x2="19" y2="38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
         </svg>
         fAIrewall
       </a>
-
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="security.html">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
-        </ul>
-      </nav>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <nav><ul class="nav-links" id="navLinks">
+        <li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li>
+        <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
+      </ul></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-
-  <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
@@ -72,311 +43,113 @@
         </div>
         <p class="hero-providers">Works with ChatGPT, Claude, Gemini, and DeepSeek on the web.</p>
       </div>
-
       <div class="hero-visual">
         <svg class="hero-shield" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="hsG" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2d5a87"/>
-              <stop offset="100%" stop-color="#1e3a5f"/>
-            </linearGradient>
-            <linearGradient id="hhG" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#5a9ad4"/>
-              <stop offset="100%" stop-color="#3d7ab0"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hsG)"/>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
-          <path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hhG)" stroke-width="1.5" opacity="0.6"/>
-          <g fill="#ffffff">
-            <rect x="29" y="24" width="6" height="24" rx="2"/>
-            <rect x="29" y="18" width="16" height="5" rx="2"/>
-            <rect x="25" y="30" width="14" height="5" rx="2"/>
-          </g>
-          <rect x="28" y="30" width="1" height="5" fill="#24547a"/>
-          <rect x="35" y="30" width="1" height="5" fill="#24547a"/>
-          <line x1="27" y1="22" x2="19" y2="38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle class="shield-dot" cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+          <defs><linearGradient id="hsG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="hhG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a9ad4"/><stop offset="100%" stop-color="#3d7ab0"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hsG)"/><path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/><path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hhG)" stroke-width="1.5" opacity="0.6"/>
+          <g fill="#fff"><rect x="29" y="24" width="6" height="24" rx="2"/><rect x="29" y="18" width="16" height="5" rx="2"/><rect x="25" y="30" width="14" height="5" rx="2"/></g>
+          <rect x="28" y="30" width="1" height="5" fill="#24547a"/><rect x="35" y="30" width="1" height="5" fill="#24547a"/>
+          <line x1="27" y1="22" x2="19" y2="38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle class="shield-dot" cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
         </svg>
       </div>
     </div>
   </section>
 
-
-  <!-- ============ WHY THIS MATTERS ============ -->
-  <section class="section" id="why">
-    <div class="container">
-      <div class="section-header fade-up">
-        <h2 class="section-title">AI adoption is moving faster than data control.</h2>
-      </div>
-      <div class="grid-2 fade-up">
-        <p class="section-intro">AI tools are already part of daily work. The challenge is not just model quality. It is what gets exposed along the way. Personal data, internal identifiers, customer information, and sensitive business context often reach AI tools before governance does.</p>
-        <p class="section-intro">fAIrewall is built for that reality. It adds a local layer of control before prompts are sent, helping reduce unnecessary exposure without asking users to abandon the tools they already rely on.</p>
-      </div>
+  <section class="section" id="why"><div class="container">
+    <div class="section-header fade-up"><h2 class="section-title">AI adoption is moving faster than data control.</h2></div>
+    <div class="grid-2 fade-up">
+      <p class="section-intro">AI tools are already part of daily work. The challenge is not just model quality. It is what gets exposed along the way. Personal data, internal identifiers, customer information, and sensitive business context often reach AI tools before governance does.</p>
+      <p class="section-intro">fAIrewall is built for that reality. It adds a local layer of control before prompts are sent, helping reduce unnecessary exposure without asking users to abandon the tools they already rely on.</p>
     </div>
-  </section>
+  </div></section>
 
-
-  <!-- ============ WHAT IT DOES ============ -->
-  <section class="section section-alt" id="what">
-    <div class="container">
-      <div class="section-header centered fade-up">
-        <h2 class="section-title">A local control layer for real-world AI use</h2>
-        <p class="section-intro">fAIrewall helps you inspect and minimize sensitive content before it leaves the browser.</p>
-      </div>
-      <div class="grid-3 fade-up">
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </div>
-          <h3>Detect locally</h3>
-          <p>Identify sensitive patterns in prompts before submission.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h3>Minimize before send</h3>
-          <p>Apply policy-driven protection to reduce unnecessary exposure at the source.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          </div>
-          <h3>Keep audit visibility</h3>
-          <p>Maintain local visibility for review, accountability, and internal governance.</p>
-        </div>
-      </div>
+  <section class="section section-alt" id="what"><div class="container">
+    <div class="section-header centered fade-up"><h2 class="section-title">A local control layer for real-world AI use</h2><p class="section-intro">fAIrewall helps you inspect and minimize sensitive content before it leaves the browser.</p></div>
+    <div class="grid-3 fade-up">
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h3>Detect locally</h3><p>Identify sensitive patterns in prompts before submission.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Minimize before send</h3><p>Apply policy-driven protection to reduce unnecessary exposure at the source.</p></div>
+      <div class="card"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3>Keep audit visibility</h3><p>Maintain local visibility for review, accountability, and internal governance.</p></div>
     </div>
-  </section>
+  </div></section>
 
-
-  <!-- ============ HOW IT WORKS ============ -->
-  <section class="section" id="how">
-    <div class="container">
-      <div class="section-header fade-up">
-        <h2 class="section-title">How it works</h2>
-      </div>
-      <div class="steps fade-up">
-        <div class="step">
-          <h3>Write your prompt</h3>
-          <p>Use your normal workflow in supported AI web apps.</p>
-        </div>
-        <div class="step">
-          <h3>Check and minimize locally</h3>
-          <p>fAIrewall inspects the prompt on-device and applies the selected protection policy before submission.</p>
-        </div>
-        <div class="step">
-          <h3>Send cleaner content</h3>
-          <p>Only the minimized version moves forward, helping reduce unnecessary exposure while keeping the workflow familiar.</p>
-        </div>
-      </div>
-      <p class="section-intro fade-up" style="margin-top:var(--space-8); font-size:var(--text-sm); color:var(--text-muted);">Designed to fit everyday AI use without becoming another hosted AI gateway.</p>
+  <section class="section" id="how"><div class="container">
+    <div class="section-header fade-up"><h2 class="section-title">How it works</h2></div>
+    <div class="steps fade-up">
+      <div class="step"><h3>Write your prompt</h3><p>Use your normal workflow in supported AI web apps.</p></div>
+      <div class="step"><h3>Check and minimize locally</h3><p>fAIrewall inspects the prompt on-device and applies the selected protection policy before submission.</p></div>
+      <div class="step"><h3>Send cleaner content</h3><p>Only the minimized version moves forward, helping reduce unnecessary exposure while keeping the workflow familiar.</p></div>
     </div>
-  </section>
+    <p class="section-intro fade-up" style="margin-top:var(--space-8);font-size:var(--text-sm);color:var(--text-muted);">Designed to fit everyday AI use without becoming another hosted AI gateway.</p>
+  </div></section>
 
-
-  <!-- ============ CORE CAPABILITIES ============ -->
-  <section class="section section-alt" id="capabilities">
-    <div class="container">
-      <div class="section-header fade-up">
-        <h2 class="section-title">Built for practical control, not just theory</h2>
-      </div>
-      <div class="capabilities fade-up">
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
-          <div>
-            <h3>Local-first by design</h3>
-            <p>Prompt inspection and minimization happen on the device.</p>
-          </div>
-        </div>
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <div>
-            <h3>Policy-driven protection</h3>
-            <p>Choose stricter or more flexible behavior based on workflow and risk level.</p>
-          </div>
-        </div>
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
-          <div>
-            <h3>Broad PII coverage</h3>
-            <p>Built to recognize strong identifiers and privacy-relevant patterns, including EU-focused categories.</p>
-          </div>
-        </div>
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          <div>
-            <h3>Cross-provider coverage</h3>
-            <p>Use one consistent control layer across major AI web apps.</p>
-          </div>
-        </div>
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <div>
-            <h3>Strict mode available</h3>
-            <p>When required, protection can fail closed instead of silently passing through.</p>
-          </div>
-        </div>
-        <div class="capability">
-          <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          <div>
-            <h3>Encrypted local audit trail with signed exports</h3>
-            <p>Keep visibility over sanitization events without routing prompts through a third-party cloud. Export audit records for review and evidence workflows.</p>
-          </div>
-        </div>
-      </div>
+  <section class="section section-alt" id="capabilities"><div class="container">
+    <div class="section-header fade-up"><h2 class="section-title">Built for practical control, not just theory</h2></div>
+    <div class="capabilities fade-up">
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2"/><circle cx="12" cy="12" r="3"/></svg><div><h3>Local-first by design</h3><p>Prompt inspection and minimization happen on the device.</p></div></div>
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><div><h3>Policy-driven protection</h3><p>Choose stricter or more flexible behavior based on workflow and risk level.</p></div></div>
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg><div><h3>Broad PII coverage</h3><p>Built to recognize strong identifiers and privacy-relevant patterns, including EU-focused categories.</p></div></div>
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><div><h3>Cross-provider coverage</h3><p>Use one consistent control layer across major AI web apps.</p></div></div>
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><div><h3>Strict mode available</h3><p>When required, protection can fail closed instead of silently passing through.</p></div></div>
+      <div class="capability"><svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><div><h3>Encrypted local audit trail with signed exports</h3><p>Keep visibility over sanitization events without routing prompts through a third-party cloud. Export audit records for review and evidence workflows.</p></div></div>
     </div>
-  </section>
+  </div></section>
 
-
-  <!-- ============ WHO IT IS FOR ============ -->
-  <section class="section" id="who">
-    <div class="container">
-      <div class="section-header fade-up">
-        <h2 class="section-title">Who it is for</h2>
-      </div>
-      <div class="grid-2 fade-up">
-        <p class="section-intro">fAIrewall is built for privacy-sensitive professionals and teams using AI in real work, including legal, finance, HR, consulting, agencies, healthcare-adjacent workflows, and SaaS teams handling customer or internal data.</p>
-        <p class="section-intro">It is especially useful where AI adoption is already happening, but internal controls, minimization, and governance are still catching up.</p>
-      </div>
+  <section class="section" id="who"><div class="container">
+    <div class="section-header fade-up"><h2 class="section-title">Who it is for</h2></div>
+    <div class="grid-2 fade-up">
+      <p class="section-intro">fAIrewall is built for privacy-sensitive professionals and teams using AI in real work, including legal, finance, HR, consulting, agencies, healthcare-adjacent workflows, and SaaS teams handling customer or internal data.</p>
+      <p class="section-intro">It is especially useful where AI adoption is already happening, but internal controls, minimization, and governance are still catching up.</p>
     </div>
-  </section>
+  </div></section>
 
-
-  <!-- ============ PRICING ============ -->
-  <section class="section section-alt" id="pricing">
-    <div class="container">
-      <div class="section-header centered fade-up">
-        <h2 class="section-title">Early pricing</h2>
-      </div>
-      <div class="pricing-grid fade-up">
-        <div class="pricing-card featured">
-          <h3>Founder</h3>
-          <div class="price">€19<span class="price-period">/month</span></div>
-          <p class="price-desc">Early supporter pricing</p>
-          <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="width:100%">Get Early Access</a>
-        </div>
-        <div class="pricing-card">
-          <h3>Solo</h3>
-          <div class="price">€29<span class="price-period">/month</span></div>
-          <p class="price-desc">For individual professionals</p>
-          <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-secondary" style="width:100%">Get Early Access</a>
-        </div>
-        <div class="pricing-card">
-          <h3>Team</h3>
-          <div class="price" style="font-size:var(--text-2xl);margin-top:var(--space-2);">Coming soon</div>
-          <p class="price-desc">For small teams and internal governance workflows</p>
-          <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request%20-%20Team" class="btn btn-secondary" style="width:100%">Request Info</a>
-        </div>
-      </div>
-      <p class="pricing-note fade-up">Volume options available for 3, 5, and 10 seats.</p>
-      <p class="pricing-note fade-up" style="margin-top:var(--space-2);">Early Access is limited while the first rollout is being released in stages.</p>
+  <section class="section section-alt" id="pricing"><div class="container">
+    <div class="section-header centered fade-up"><h2 class="section-title">Early pricing</h2></div>
+    <div class="pricing-grid fade-up">
+      <div class="pricing-card featured"><h3>Founder</h3><div class="price">&euro;19<span class="price-period">/month</span></div><p class="price-desc">Early supporter pricing</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="width:100%">Get Early Access</a></div>
+      <div class="pricing-card"><h3>Solo</h3><div class="price">&euro;29<span class="price-period">/month</span></div><p class="price-desc">For individual professionals</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-secondary" style="width:100%">Get Early Access</a></div>
+      <div class="pricing-card"><h3>Team</h3><div class="price" style="font-size:var(--text-2xl);margin-top:var(--space-2);">Coming soon</div><p class="price-desc">For small teams and internal governance workflows</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request%20-%20Team" class="btn btn-secondary" style="width:100%">Request Info</a></div>
     </div>
-  </section>
+    <p class="pricing-note fade-up">Volume options available for 3, 5, and 10 seats.</p>
+    <p class="pricing-note fade-up" style="margin-top:var(--space-2);">Early Access is limited while the first rollout is being released in stages.</p>
+  </div></section>
 
-
-  <!-- ============ FAQ ============ -->
-  <section class="section" id="faq">
-    <div class="container">
-      <div class="section-header centered fade-up">
-        <h2 class="section-title">FAQ</h2>
-      </div>
-      <div class="faq-list fade-up">
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Does fAIrewall send my prompts to your servers?</button>
-          <div class="faq-a"><p>By default, no. fAIrewall is built around local processing and local control rather than acting as a hosted relay.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Is fAIrewall an AI model or a hosted AI platform?</button>
-          <div class="faq-a"><p>No. It is a local control layer designed to help reduce sensitive data exposure before prompts are submitted to the AI tools you already use.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Which AI tools are currently supported?</button>
-          <div class="faq-a"><p>Current web support includes ChatGPT, Claude, Gemini, and DeepSeek.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Who is it for?</button>
-          <div class="faq-a"><p>It is designed for professionals and teams who want more control over what gets exposed to AI tools during everyday work.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Can it operate in stricter environments?</button>
-          <div class="faq-a"><p>Yes. fAIrewall is designed to support stricter operational modes when silent fallback is not acceptable.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Is there a free trial?</button>
-          <div class="faq-a"><p>A 14-day local trial is planned as part of the rollout.</p></div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">Will it be available on Mac and Windows?</button>
-          <div class="faq-a"><p>Yes. Early rollout targets both macOS and Windows.</p></div>
-        </div>
-      </div>
+  <section class="section" id="faq"><div class="container">
+    <div class="section-header centered fade-up"><h2 class="section-title">FAQ</h2></div>
+    <div class="faq-list fade-up">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Does fAIrewall send my prompts to your servers?</button><div class="faq-a"><p>By default, no. fAIrewall is built around local processing and local control rather than acting as a hosted relay.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is fAIrewall an AI model or a hosted AI platform?</button><div class="faq-a"><p>No. It is a local control layer designed to help reduce sensitive data exposure before prompts are submitted to the AI tools you already use.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Which AI tools are currently supported?</button><div class="faq-a"><p>Current web support includes ChatGPT, Claude, Gemini, and DeepSeek.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Who is it for?</button><div class="faq-a"><p>It is designed for professionals and teams who want more control over what gets exposed to AI tools during everyday work.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can it operate in stricter environments?</button><div class="faq-a"><p>Yes. fAIrewall is designed to support stricter operational modes when silent fallback is not acceptable.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is there a free trial?</button><div class="faq-a"><p>A 14-day local trial is planned as part of the rollout.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Will it be available on Mac and Windows?</button><div class="faq-a"><p>Yes. Early rollout targets both macOS and Windows.</p></div></div>
     </div>
-  </section>
+  </div></section>
 
+  <section class="final-cta"><div class="container">
+    <h2>Use AI with more control.</h2>
+    <p>Join Early Access and follow the first public rollout of fAIrewall.</p>
+    <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="background:var(--neutral-0);color:var(--brand-700);">Get Early Access</a>
+    <p class="micro">No hype. No unnecessary tracking. Just a clearer control layer for AI use.</p>
+  </div></section>
 
-  <!-- ============ FINAL CTA ============ -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Use AI with more control.</h2>
-      <p>Join Early Access and follow the first public rollout of fAIrewall.</p>
-      <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="background:var(--neutral-0);color:var(--brand-700);">Get Early Access</a>
-      <p class="micro">No hype. No unnecessary tracking. Just a clearer control layer for AI use.</p>
+  <footer class="site-footer"><div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">&copy; 2026 fAIrewall</div><p>Local privacy firewall for AI.</p></div>
+      <ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
     </div>
-  </section>
-
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">fAIrewall</div>
-          <p>Local privacy firewall for AI.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a href="security.html">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-meta">
-        <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
-        <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
-        <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
-      </div>
+    <div class="footer-meta">
+      <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
+      <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
+      <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
     </div>
-  </footer>
+  </div></footer>
 
-
-  <!-- ============ SCRIPTS ============ -->
   <script>
-    const header = document.getElementById('siteHeader');
-    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
-
-    const toggle = document.getElementById('menuToggle');
-    const links = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => { links.classList.toggle('open'); });
-
-    document.querySelectorAll('.faq-q').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-        document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded', 'false'));
-        if (!isOpen) {
-          item.classList.add('open');
-          btn.setAttribute('aria-expanded', 'true');
-        }
-      });
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    const header=document.getElementById('siteHeader');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>10)});
+    const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.classList.toggle('open')});
+    document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));document.querySelectorAll('.faq-q').forEach(b=>b.setAttribute('aria-expanded','false'));if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}})});
+    const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
   </script>
-
 </body>
 </html>

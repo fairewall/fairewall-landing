@@ -6,122 +6,62 @@
   <meta name="theme-color" content="#1e3a5f" />
   <title>Support — fAIrewall</title>
   <meta name="description" content="Contact fAIrewall for Early Access, support, privacy, or security disclosures." />
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <div class="container">
       <a href="/" class="site-logo" aria-label="fAIrewall home">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="hShieldG" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2d5a87"/>
-              <stop offset="100%" stop-color="#1e3a5f"/>
-            </linearGradient>
-            <linearGradient id="hHighG" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#5a9ad4"/>
-              <stop offset="100%" stop-color="#3d7ab0"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hShieldG)"/>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
-          <path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHighG)" stroke-width="1.5" opacity="0.6"/>
-          <g fill="#ffffff">
-            <rect x="29" y="24" width="6" height="24" rx="2"/>
-            <rect x="29" y="18" width="16" height="5" rx="2"/>
-            <rect x="25" y="30" width="14" height="5" rx="2"/>
-          </g>
-          <rect x="28" y="30" width="1" height="5" fill="#24547a"/>
-          <rect x="35" y="30" width="1" height="5" fill="#24547a"/>
-          <line x1="27" y1="22" x2="19" y2="38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+        <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="hSG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="hHG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a9ad4"/><stop offset="100%" stop-color="#3d7ab0"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hSG)"/><path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/><path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHG)" stroke-width="1.5" opacity="0.6"/>
+          <g fill="#fff"><rect x="29" y="24" width="6" height="24" rx="2"/><rect x="29" y="18" width="16" height="5" rx="2"/><rect x="25" y="30" width="14" height="5" rx="2"/></g>
+          <rect x="28" y="30" width="1" height="5" fill="#24547a"/><rect x="35" y="30" width="1" height="5" fill="#24547a"/>
+          <line x1="27" y1="22" x2="19" y2="38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
         </svg>
         fAIrewall
       </a>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="security.html">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html" style="color:var(--brand-700)">Support</a></li>
-          <li><a href="/cdn-cgi/l/email-protection#77040207071805033711161e051200161b1b59161e480402151d1214034a3216051b0e52454736141412040452454725120602120403" class="btn btn-primary btn-sm">Get Early Access</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <nav><ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html" style="color:var(--brand-700)">Support</a></li>
+        <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
+      </ul></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
+  <section class="page-hero"><div class="container">
+    <h1>Support and Contact</h1>
+    <p>Need help, want to request Early Access, or have a question about fAIrewall? Contact us by email.</p>
+  </div></section>
 
-  <!-- ============ PAGE HERO ============ -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Support and Contact</h1>
-      <p>Need help, want to request Early Access, or have a question about fAIrewall? Contact us by email.</p>
+  <div class="page-content"><div class="container">
+    <div class="contact-grid">
+      <div class="contact-block"><h3>Early Access</h3><a href="mailto:hello@fairewall.ai?subject=Early%20Access%20Request">hello@fairewall.ai</a></div>
+      <div class="contact-block"><h3>Support</h3><a href="mailto:support@fairewall.ai">support@fairewall.ai</a></div>
+      <div class="contact-block"><h3>Privacy</h3><a href="mailto:privacy@fairewall.ai">privacy@fairewall.ai</a></div>
+      <div class="contact-block"><h3>Security Disclosures</h3><a href="mailto:security@fairewall.ai">security@fairewall.ai</a></div>
     </div>
-  </section>
+    <div class="page-section"><h2>Before you email us</h2><p>Please avoid sending highly sensitive information unless it is necessary for support. If you need to share logs or screenshots, only send what is relevant to the issue.</p></div>
+    <div class="page-section"><h2>Early Access requests</h2><p>If you are requesting Early Access, a short note about your role, use case, and environment helps us prioritize the rollout.</p></div>
+    <div style="margin-top:var(--space-12);text-align:center;"><a href="mailto:support@fairewall.ai" class="btn btn-primary">Email support@fairewall.ai</a></div>
+  </div></div>
 
-
-  <!-- ============ CONTENT ============ -->
-  <div class="page-content">
-    <div class="container">
-
-      <!-- Contact blocks -->
-      <div class="contact-grid fade-up">
-        <div class="contact-block">
-          <h3>Early Access</h3>
-          <a href="/cdn-cgi/l/email-protection#93fbf6fffffcd3f5f2fae1f6e4f2ffffbdf2faace0e6f1f9f6f0e7aed6f2e1ffeab6a1a3d2f0f0f6e0e0b6a1a3c1f6e2e6f6e0e7"><span class="__cf_email__" data-cfemail="b5ddd0d9d9daf5d3d4dcc7d0c2d4d9d99bd4dc">[email&#160;protected]</span></a>
-        </div>
-        <div class="contact-block">
-          <h3>Support</h3>
-          <a href="/cdn-cgi/l/email-protection#3d4e484d4d524f497d5b5c544f584a5c5151135c54"><span class="__cf_email__" data-cfemail="96e5e3e6e6f9e4e2d6f0f7ffe4f3e1f7fafab8f7ff">[email&#160;protected]</span></a>
-        </div>
-        <div class="contact-block">
-          <h3>Privacy</h3>
-          <a href="/cdn-cgi/l/email-protection#e090928996818399a0868189928597818c8cce8189"><span class="__cf_email__" data-cfemail="5323213a2532302a1335323a213624323f3f7d323a">[email&#160;protected]</span></a>
-        </div>
-        <div class="contact-block">
-          <h3>Security Disclosures</h3>
-          <a href="/cdn-cgi/l/email-protection#abd8cec8ded9c2dfd2ebcdcac2d9cedccac7c785cac2"><span class="__cf_email__" data-cfemail="b9cadcdacccbd0cdc0f9dfd8d0cbdcced8d5d597d8d0">[email&#160;protected]</span></a>
-        </div>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Before you email us</h2>
-        <p>Please avoid sending highly sensitive information unless it is necessary for support. If you need to share logs or screenshots, only send what is relevant to the issue.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Early Access requests</h2>
-        <p>If you are requesting Early Access, a short note about your role, use case, and environment helps us prioritize the rollout.</p>
-      </div>
-
-      <div class="fade-up" style="margin-top:var(--space-12); text-align:center;">
-        <a href="/cdn-cgi/l/email-protection#26555356564954526640474f544351474a4a08474f" class="btn btn-primary">Email <span class="__cf_email__" data-cfemail="d0a3a5a0a0bfa2a490b6b1b9a2b5a7b1bcbcfeb1b9">[email&#160;protected]</span></a>
-      </div>
-
+  <footer class="site-footer"><div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">&copy; 2026 fAIrewall</div><p>Local privacy firewall for AI.</p></div>
+      <ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
     </div>
-  </div>
+    <div class="footer-meta">
+      <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
+      <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
+      <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
+    </div>
+  </div></footer>
 
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">fAIrewall</div>
-          <p>Local privacy firewall for AI.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a href="security.html">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-meta">
-        <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
-        <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
-        <span class="footer-contact">Early Access and support: <a href="/cdn-cgi/
+  <script>
+    const header=document.getElementById('siteHeader');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>10)});
+    const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.classList.toggle('open')});
+  </script>
+</body>
+</html>

@@ -6,150 +6,69 @@
   <meta name="theme-color" content="#1e3a5f" />
   <title>Security — fAIrewall</title>
   <meta name="description" content="fAIrewall security model: local-first architecture, pre-send minimization, policy-driven protection, and local audit visibility." />
-    <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <div class="container">
       <a href="/" class="site-logo" aria-label="fAIrewall home">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="hShieldG" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2d5a87"/>
-              <stop offset="100%" stop-color="#1e3a5f"/>
-            </linearGradient>
-            <linearGradient id="hHighG" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#5a9ad4"/>
-              <stop offset="100%" stop-color="#3d7ab0"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hShieldG)"/>
-          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
-          <path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHighG)" stroke-width="1.5" opacity="0.6"/>
-          <g fill="#ffffff">
-            <rect x="29" y="24" width="6" height="24" rx="2"/>
-            <rect x="29" y="18" width="16" height="5" rx="2"/>
-            <rect x="25" y="30" width="14" height="5" rx="2"/>
-          </g>
-          <rect x="28" y="30" width="1" height="5" fill="#24547a"/>
-          <rect x="35" y="30" width="1" height="5" fill="#24547a"/>
-          <line x1="27" y1="22" x2="19" y2="38" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+        <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="hSG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="hHG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a9ad4"/><stop offset="100%" stop-color="#3d7ab0"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hSG)"/><path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/><path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHG)" stroke-width="1.5" opacity="0.6"/>
+          <g fill="#fff"><rect x="29" y="24" width="6" height="24" rx="2"/><rect x="29" y="18" width="16" height="5" rx="2"/><rect x="25" y="30" width="14" height="5" rx="2"/></g>
+          <rect x="28" y="30" width="1" height="5" fill="#24547a"/><rect x="35" y="30" width="1" height="5" fill="#24547a"/>
+          <line x1="27" y1="22" x2="19" y2="38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
         </svg>
         fAIrewall
       </a>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="security.html" style="color:var(--brand-700)">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="/cdn-cgi/l/email-protection#cebdbbbebea1bcba8ea8afa7bcabb9afa2a2e0afa7f1bdbbaca4abadbaf38bafbca2b7ebfcfe8fadadabbdbdebfcfe9cabbfbbabbdba" class="btn btn-primary btn-sm">Get Early Access</a></li>
-        </ul>
-      </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
+      <nav><ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li><li><a href="security.html" style="color:var(--brand-700)">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li>
+        <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
+      </ul></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
+  <section class="page-hero"><div class="container">
+    <h1>Security built around local control.</h1>
+    <p>fAIrewall is designed to help reduce prompt exposure before data reaches AI tools. Its security model is built around local processing, policy-driven minimization, and local audit visibility.</p>
+  </div></section>
 
-  <!-- ============ PAGE HERO ============ -->
-  <section class="page-hero">
-    <div class="container">
-      <h1>Security built around local control.</h1>
-      <p>fAIrewall is designed to help reduce prompt exposure before data reaches AI tools. Its security model is built around local processing, policy-driven minimization, and local audit visibility.</p>
+  <div class="page-content"><div class="container">
+    <div class="page-section"><h2>Local-first architecture</h2><p>fAIrewall is built around processing on the user's device. Its role is to inspect and minimize sensitive content before submission, instead of routing prompts through a hosted third-party gateway.</p></div>
+    <div class="page-section"><h2>Pre-send minimization</h2><p>The product focuses on reducing exposure before a prompt is sent. That makes minimization the first line of defense, rather than relying only on downstream provider settings or post-submission controls.</p></div>
+    <div class="page-section"><h2>Policy-driven protection</h2><p>Different workflows require different protection levels. fAIrewall is designed to support policy-based behavior so users and teams can align protection with operational needs and risk tolerance.</p></div>
+    <div class="page-section"><h2>Local audit visibility</h2><p>Where audit features are enabled, visibility is designed to stay local and support internal review, accountability, and evidence workflows without turning the product into another cloud logging system.</p></div>
+    <div class="page-section"><h2>Stricter behavior when needed</h2><p>Some environments prioritize convenience. Others require stronger guarantees. fAIrewall is designed to support stricter operational modes when silent fallback is not acceptable.</p></div>
+    <div class="page-section"><h2>Consistency across AI tools</h2><p>Many teams do not use just one AI tool. fAIrewall is designed to bring a more consistent control layer across major AI web apps, reducing fragmentation in everyday usage.</p></div>
+    <div class="page-section"><h2>Current provider coverage</h2><p>Current web support includes ChatGPT, Claude, Gemini, and DeepSeek.</p></div>
+    <div class="page-section"><h2>What fAIrewall is not</h2><p>fAIrewall is not a model provider and not a hosted AI platform. It is a local control layer designed to help reduce sensitive data exposure before prompts are submitted.</p></div>
+    <div class="page-section"><h2>Security boundaries</h2><p>No security product works in isolation. Effective protection still depends on supported environments, correct configuration, and sound user practices. fAIrewall is designed to strengthen control before prompts are sent and to reduce avoidable exposure in real workflows.</p></div>
+  </div></div>
+
+  <section class="final-cta"><div class="container">
+    <h2>Want Early Access?</h2>
+    <p>Get in touch to follow the rollout and request access.</p>
+    <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="background:var(--neutral-0);color:var(--brand-700);">Get Early Access</a>
+    <p class="micro" style="margin-top:var(--space-6);">For support or responsible disclosure, contact <a href="mailto:support@fairewall.ai" style="color:rgba(255,255,255,0.7)">support@fairewall.ai</a> or <a href="mailto:security@fairewall.ai" style="color:rgba(255,255,255,0.7)">security@fairewall.ai</a></p>
+  </div></section>
+
+  <footer class="site-footer"><div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">&copy; 2026 fAIrewall</div><p>Local privacy firewall for AI.</p></div>
+      <ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
     </div>
-  </section>
-
-
-  <!-- ============ CONTENT ============ -->
-  <div class="page-content">
-    <div class="container">
-
-      <div class="page-section fade-up">
-        <h2>Local-first architecture</h2>
-        <p>fAIrewall is built around processing on the user's device. Its role is to inspect and minimize sensitive content before submission, instead of routing prompts through a hosted third-party gateway.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Pre-send minimization</h2>
-        <p>The product focuses on reducing exposure before a prompt is sent. That makes minimization the first line of defense, rather than relying only on downstream provider settings or post-submission controls.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Policy-driven protection</h2>
-        <p>Different workflows require different protection levels. fAIrewall is designed to support policy-based behavior so users and teams can align protection with operational needs and risk tolerance.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Local audit visibility</h2>
-        <p>Where audit features are enabled, visibility is designed to stay local and support internal review, accountability, and evidence workflows without turning the product into another cloud logging system.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Stricter behavior when needed</h2>
-        <p>Some environments prioritize convenience. Others require stronger guarantees. fAIrewall is designed to support stricter operational modes when silent fallback is not acceptable.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Consistency across AI tools</h2>
-        <p>Many teams do not use just one AI tool. fAIrewall is designed to bring a more consistent control layer across major AI web apps, reducing fragmentation in everyday usage.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Current provider coverage</h2>
-        <p>Current web support includes ChatGPT, Claude, Gemini, and DeepSeek.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>What fAIrewall is not</h2>
-        <p>fAIrewall is not a model provider and not a hosted AI platform. It is a local control layer designed to help reduce sensitive data exposure before prompts are submitted.</p>
-      </div>
-
-      <div class="page-section fade-up">
-        <h2>Security boundaries</h2>
-        <p>No security product works in isolation. Effective protection still depends on supported environments, correct configuration, and sound user practices. fAIrewall is designed to strengthen control before prompts are sent and to reduce avoidable exposure in real workflows.</p>
-      </div>
-
+    <div class="footer-meta">
+      <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
+      <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
+      <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
     </div>
-  </div>
+  </div></footer>
 
-
-  <!-- ============ BOTTOM CTA ============ -->
-  <section class="final-cta">
-    <div class="container">
-      <h2>Want Early Access?</h2>
-      <p>Get in touch to follow the rollout and request access.</p>
-      <a href="/cdn-cgi/l/email-protection#65161015150a17112503040c1700120409094b040c5a1610070f00061158200417091c40575524060600161640575537001410001611" class="btn btn-primary" style="background:var(--neutral-0);color:var(--brand-700);">Get Early Access</a>
-      <p class="micro" style="margin-top:var(--space-6);">For support or responsible disclosure, contact <a href="/cdn-cgi/l/email-protection#f2818782829d8086b294939b809785939e9edc939b" style="color:rgba(255,255,255,0.7)"><span class="__cf_email__" data-cfemail="63101613130c11172305020a110614020f0f4d020a">[email&#160;protected]</span></a> or <a href="/cdn-cgi/l/email-protection#2556404650574c515c6543444c5740524449490b444c" style="color:rgba(255,255,255,0.7)"><span class="__cf_email__" data-cfemail="e497818791968d909da482858d968193858888ca858d">[email&#160;protected]</span></a></p>
-    </div>
-  </section>
-
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">fAIrewall</div>
-          <p>Local privacy firewall for AI.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a href="security.html">Security</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="support.html">Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-meta">
-        <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
-        <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
-        <span class="footer-contact">Early Access and support: <a href="/cdn-cgi/l/email-protection#c2b1b7b2b2adb0b682a4a3abb0a7b5a3aeaeeca3ab"><span class="__cf_email__" data-cfemail="43303633332c31370325222a312634222f2f6d222a">[email&#160;protected]</span></a></span>
-      </div>
-    </div>
-  </footer>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    const header = 
+  <script>
+    const header=document.getElementById('siteHeader');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>10)});
+    const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.classList.toggle('open')});
+  </script>
+</body>
+</html>

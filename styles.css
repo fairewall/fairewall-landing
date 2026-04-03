@@ -201,8 +201,34 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: var(--space-2);
   color: var(--text);
+  position: relative;
+  width: 40px;
+  height: 40px;
 }
-.menu-toggle svg { width: 24px; height: 24px; }
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  position: absolute;
+  left: 9px;
+  transition: all 0.3s var(--ease);
+  border-radius: 1px;
+}
+.menu-toggle span:nth-child(1) { top: 12px; }
+.menu-toggle span:nth-child(2) { top: 19px; }
+.menu-toggle span:nth-child(3) { top: 26px; }
+.menu-toggle.open span:nth-child(1) {
+  top: 19px;
+  transform: rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  top: 19px;
+  transform: rotate(-45deg);
+}
 
 
 /* === Buttons === */
@@ -429,7 +455,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-3);
 }
 .card p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -482,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--space-3);
 }
 .step p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -510,12 +536,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2px;
 }
 .capability h3 {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: 600;
   margin-bottom: var(--space-1);
 }
 .capability p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -587,7 +613,7 @@ h1, h2, h3, h4, h5, h6 {
 .pricing-note {
   text-align: center;
   margin-top: var(--space-8);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-muted);
 }
 
@@ -641,7 +667,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: var(--space-4);
 }
 .faq-a p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -915,17 +941,17 @@ h1, h2, h3, h4, h5, h6 {
 .hero-shield {
   width: 260px;
   height: 260px;
-  animation: shield-spin 14s ease-in-out infinite;
+  animation: shield-wobble 10s ease-in-out infinite;
   transform-style: preserve-3d;
   filter: drop-shadow(0 8px 32px rgba(0,0,0,0.25));
 }
 
-@keyframes shield-spin {
-  0%   { transform: rotateY(0deg)   translateY(0);    }
-  25%  { transform: rotateY(90deg)  translateY(-8px);  }
-  50%  { transform: rotateY(180deg) translateY(0);     }
-  75%  { transform: rotateY(270deg) translateY(-8px);  }
-  100% { transform: rotateY(360deg) translateY(0);     }
+@keyframes shield-wobble {
+  0%   { transform: rotateY(0deg)    translateY(0);    }
+  25%  { transform: rotateY(20deg)   translateY(-8px);  }
+  50%  { transform: rotateY(0deg)    translateY(0);     }
+  75%  { transform: rotateY(-20deg)  translateY(-8px);  }
+  100% { transform: rotateY(0deg)    translateY(0);     }
 }
 
 /* Green dot glow pulse on the hero shield */
