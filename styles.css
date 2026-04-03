@@ -880,3 +880,64 @@ h1, h2, h3, h4, h5, h6 {
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .pricing-card { padding: var(--space-6); }
 }
+
+
+/* === D25 Fixes === */
+
+/* Fix: nav CTA button must have white text */
+.nav-links .btn-primary,
+.nav-links .btn-primary:hover {
+  color: var(--neutral-0);
+}
+
+/* Hero: two-column layout with visual on right */
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+/* Hero: "Works with" line more visible */
+.hero-providers {
+  font-size: var(--text-base);
+  color: rgba(255,255,255,0.65);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* Hero: animated shield */
+.hero-visual {
+  flex-shrink: 0;
+  perspective: 1000px;
+}
+
+.hero-shield {
+  width: 260px;
+  height: 260px;
+  animation: shield-spin 14s ease-in-out infinite;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.25));
+}
+
+@keyframes shield-spin {
+  0%   { transform: rotateY(0deg)   translateY(0);    }
+  25%  { transform: rotateY(90deg)  translateY(-8px);  }
+  50%  { transform: rotateY(180deg) translateY(0);     }
+  75%  { transform: rotateY(270deg) translateY(-8px);  }
+  100% { transform: rotateY(360deg) translateY(0);     }
+}
+
+/* Green dot glow pulse on the hero shield */
+.hero-shield .shield-dot {
+  animation: dot-glow 3s ease-in-out infinite;
+}
+@keyframes dot-glow {
+  0%, 100% { opacity: 0.9; }
+  50%      { opacity: 0.5; }
+}
+
+@media (max-width: 900px) {
+  .hero-grid { flex-direction: column; text-align: left; }
+  .hero-visual { display: none; }
+}
