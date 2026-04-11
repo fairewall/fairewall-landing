@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1e3a5f" />
-  <title>Support — fAIrewall</title>
-  <meta name="description" content="Contact fAIrewall for Early Access, support, privacy, or security disclosures." />
+  <title>Download — fAIrewall</title>
+  <meta name="description" content="Download fAIrewall desktop app and browser extension. Available for macOS, Windows, Chrome and Edge." />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -23,7 +23,7 @@
         fAIrewall
       </a>
       <nav><ul class="nav-links" id="navLinks">
-<li><a href="/">Home</a></li><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html" style="color:var(--brand-700)">Support</a></li><li><a href="download.html">Download</a></li>
+<li><a href="/">Home</a></li><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li><li><a href="download.html" style="color:var(--brand-700)">Download</a></li>
         <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
       </ul></nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -31,20 +31,61 @@
   </header>
 
   <section class="page-hero"><div class="container">
-    <h1>Support and Contact</h1>
-    <p>Need help, want to request Early Access, or have a question about fAIrewall? Contact us by email.</p>
+    <h1>Download fAIrewall</h1>
+    <p>fAIrewall requires two components: a desktop app (the local backend) and a browser extension.</p>
   </div></section>
 
   <div class="page-content"><div class="container">
-    <div class="contact-grid">
-      <div class="contact-block"><h3>Early Access</h3><a href="mailto:hello@fairewall.ai?subject=Early%20Access%20Request">hello@fairewall.ai</a></div>
-      <div class="contact-block"><h3>Support</h3><a href="mailto:support@fairewall.ai">support@fairewall.ai</a></div>
-      <div class="contact-block"><h3>Privacy</h3><a href="mailto:privacy@fairewall.ai">privacy@fairewall.ai</a></div>
-      <div class="contact-block"><h3>Security Disclosures</h3><a href="mailto:security@fairewall.ai">security@fairewall.ai</a></div>
+
+    <div class="page-section">
+      <h2>Step 1 — Desktop App</h2>
+      <p>The desktop app runs locally on your machine. It performs all PII detection, sanitization, and audit logging. No data leaves your device.</p>
+      <div class="contact-grid" style="margin-top:var(--space-6);">
+        <div class="contact-block">
+          <h3>macOS</h3>
+          <p style="font-size:14px;color:var(--neutral-500);">Notarized DMG installer<br>macOS 11 (Big Sur) or later</p>
+          <p style="font-size:13px;color:var(--neutral-400);margin-top:var(--space-2);">Coming soon — Early Access rollout in progress.</p>
+        </div>
+        <div class="contact-block">
+          <h3>Windows</h3>
+          <p style="font-size:14px;color:var(--neutral-500);">Installer (.exe)<br>Windows 10 or later</p>
+          <p style="font-size:13px;color:var(--neutral-400);margin-top:var(--space-2);">Coming soon — Early Access rollout in progress.</p>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--neutral-500);margin-top:var(--space-4);">Windows note: The installer is not yet code-signed. Windows SmartScreen may show a warning. Click "More info" → "Run anyway" to proceed. SHA256 checksums will be published with each release.</p>
     </div>
-    <div class="page-section"><h2>Before you email us</h2><p>Please avoid sending highly sensitive information unless it is necessary for support. If you need to share logs or screenshots, only send what is relevant to the issue.</p></div>
-    <div class="page-section"><h2>Early Access requests</h2><p>If you are requesting Early Access, a short note about your role, use case, and environment helps us prioritize the rollout.</p></div>
-    <div style="margin-top:var(--space-12);text-align:center;"><a href="mailto:support@fairewall.ai" class="btn btn-primary">Email support@fairewall.ai</a></div>
+
+    <div class="page-section">
+      <h2>Step 2 — Browser Extension</h2>
+      <p>The browser extension intercepts prompts before they reach the AI provider and sends them to the local desktop app for sanitization.</p>
+      <div class="contact-grid" style="margin-top:var(--space-6);">
+        <div class="contact-block">
+          <h3>Chrome</h3>
+          <p style="font-size:14px;color:var(--neutral-500);">Chrome Web Store</p>
+          <p style="font-size:13px;color:var(--neutral-400);margin-top:var(--space-2);">Listing pending — submission in progress.</p>
+        </div>
+        <div class="contact-block">
+          <h3>Edge</h3>
+          <p style="font-size:14px;color:var(--neutral-500);">Edge Add-ons</p>
+          <p style="font-size:13px;color:var(--neutral-400);margin-top:var(--space-2);">Listing pending — submission in progress.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <h2>Supported AI Providers</h2>
+      <p>ChatGPT · Claude · Gemini · DeepSeek · Copilot</p>
+    </div>
+
+    <div class="page-section">
+      <h2>Coming Later</h2>
+      <p>Firefox extension and Grok support are planned for V1.1. Safari and Linux support are planned for future releases.</p>
+    </div>
+
+    <div style="margin-top:var(--space-12);text-align:center;">
+      <a href="mailto:hello@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary">Request Early Access</a>
+    </div>
+
   </div></div>
 
   <footer class="site-footer"><div class="container">
@@ -55,7 +96,7 @@
     <div class="footer-meta">
       <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
       <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
-    <span class="footer-contact">Contact: <a href="mailto:hello@fairewall.ai">hello@fairewall.ai</a></span>
+      <span class="footer-contact">Contact: <a href="mailto:hello@fairewall.ai">hello@fairewall.ai</a></span>
       <span class="footer-legal">fAIrewall is an EU-based product. <a href="mailto:hello@fairewall.ai">Legal inquiries</a></span>
     </div>
   </div></footer>

@@ -23,7 +23,7 @@
         fAIrewall
       </a>
       <nav><ul class="nav-links" id="navLinks">
-        <li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li>
+       <li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li><li><a href="download.html">Download</a></li>
         <li><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary btn-sm">Get Early Access</a></li>
       </ul></nav>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -41,7 +41,7 @@
           <a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary">Get Early Access</a>
           <a href="security.html" class="btn btn-light">Read the Security Overview</a>
         </div>
-        <p class="hero-providers">Works with ChatGPT, Claude, Gemini, and DeepSeek on the web.</p>
+        <p class="hero-providers">Works with ChatGPT, Claude, Gemini, DeepSeek, and Copilot on the web.</p>
       </div>
       <div class="hero-visual">
         <svg class="hero-shield" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
@@ -101,16 +101,33 @@
       <p class="section-intro">It is especially useful where AI adoption is already happening, but internal controls, minimization, and governance are still catching up.</p>
     </div>
   </div></section>
-
+<section class="section" id="compatibility"><div class="container">
+    <div class="section-header centered fade-up"><h2 class="section-title">Supported Platforms</h2></div>
+    <div class="fade-up" style="max-width:600px;margin:0 auto;">
+      <table style="width:100%;border-collapse:collapse;font-size:15px;margin-top:var(--space-6);">
+        <thead><tr style="border-bottom:2px solid var(--neutral-200);text-align:left;">
+          <th style="padding:var(--space-2) var(--space-3);">Component</th>
+          <th style="padding:var(--space-2) var(--space-3);">Supported</th>
+        </tr></thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--neutral-100);"><td style="padding:var(--space-2) var(--space-3);">Desktop App</td><td style="padding:var(--space-2) var(--space-3);">macOS · Windows</td></tr>
+          <tr style="border-bottom:1px solid var(--neutral-100);"><td style="padding:var(--space-2) var(--space-3);">Browser Extension</td><td style="padding:var(--space-2) var(--space-3);">Chrome · Edge</td></tr>
+          <tr style="border-bottom:1px solid var(--neutral-100);"><td style="padding:var(--space-2) var(--space-3);">AI Providers</td><td style="padding:var(--space-2) var(--space-3);">ChatGPT · Claude · Gemini · DeepSeek · Copilot</td></tr>
+          <tr><td style="padding:var(--space-2) var(--space-3);">Coming Next</td><td style="padding:var(--space-2) var(--space-3);">Firefox · Grok</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:13px;color:var(--neutral-500);margin-top:var(--space-3);text-align:center;">Linux and Safari support are planned for future releases.</p>
+    </div>
+  </div></section>
   <section class="section section-alt" id="pricing"><div class="container">
-    <div class="section-header centered fade-up"><h2 class="section-title">Early pricing</h2></div>
+    <div class="section-header centered fade-up"><h2 class="section-title">Planned Pricing</h2><p class="section-subtitle">Billing is not yet active. Prices shown are planned launch pricing.</p></div>
     <div class="pricing-grid fade-up">
       <div class="pricing-card featured"><h3>Founder</h3><div class="price">&euro;19<span class="price-period">/month</span></div><p class="price-desc">Early supporter pricing</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-primary" style="width:100%">Get Early Access</a></div>
       <div class="pricing-card"><h3>Solo</h3><div class="price">&euro;29<span class="price-period">/month</span></div><p class="price-desc">For individual professionals</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request" class="btn btn-secondary" style="width:100%">Get Early Access</a></div>
       <div class="pricing-card"><h3>Team</h3><div class="price" style="font-size:var(--text-2xl);margin-top:var(--space-2);">Coming soon</div><p class="price-desc">For small teams and internal governance workflows</p><a href="mailto:support@fairewall.ai?subject=Early%20Access%20Request%20-%20Team" class="btn btn-secondary" style="width:100%">Request Info</a></div>
     </div>
-    <p class="pricing-note fade-up">Volume options available for 3, 5, and 10 seats.</p>
-    <p class="pricing-note fade-up" style="margin-top:var(--space-2);">Early Access is limited while the first rollout is being released in stages.</p>
+    <p class="pricing-note fade-up">Volume options available for 3, 5, and 10 seats. All prices exclude applicable taxes.</p>
+    <p class="pricing-note fade-up" style="margin-top:var(--space-2);">Early Access is limited while the first rollout is being released in stages. No payment is required during the free trial.</p>
   </div></section>
 
   <section class="section" id="faq"><div class="container">
@@ -118,7 +135,7 @@
     <div class="faq-list fade-up">
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Does fAIrewall send my prompts to your servers?</button><div class="faq-a"><p>By default, no. fAIrewall is built around local processing and local control rather than acting as a hosted relay.</p></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Is fAIrewall an AI model or a hosted AI platform?</button><div class="faq-a"><p>No. It is a local control layer designed to help reduce sensitive data exposure before prompts are submitted to the AI tools you already use.</p></div></div>
-      <div class="faq-item"><button class="faq-q" aria-expanded="false">Which AI tools are currently supported?</button><div class="faq-a"><p>Current web support includes ChatGPT, Claude, Gemini, and DeepSeek.</p></div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Which AI tools are currently supported?</button><div class="faq-a"><p>Current web support includes ChatGPT, Claude, Gemini, DeepSeek, and Copilot.</p></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Who is it for?</button><div class="faq-a"><p>It is designed for professionals and teams who want more control over what gets exposed to AI tools during everyday work.</p></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Can it operate in stricter environments?</button><div class="faq-a"><p>Yes. fAIrewall is designed to support stricter operational modes when silent fallback is not acceptable.</p></div></div>
       <div class="faq-item"><button class="faq-q" aria-expanded="false">Is there a free trial?</button><div class="faq-a"><p>A 14-day local trial is planned as part of the rollout.</p></div></div>
@@ -133,15 +150,15 @@
     <p class="micro">No hype. No unnecessary tracking. Just a clearer control layer for AI use.</p>
   </div></section>
 
-  <footer class="site-footer"><div class="container">
+ <footer class="site-footer"><div class="container">
     <div class="footer-inner">
       <div><div class="footer-brand">&copy; 2026 fAIrewall</div><p>Local privacy firewall for AI.</p></div>
-      <ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li></ul>
-    </div>
+<ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li><li><a href="download.html">Download</a></li></ul>    </div>
     <div class="footer-meta">
       <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
       <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
-      <span class="footer-contact">Early Access and support: <a href="mailto:support@fairewall.ai">support@fairewall.ai</a></span>
+      <span class="footer-contact">Contact: <a href="mailto:hello@fairewall.ai">hello@fairewall.ai</a></span>
+      <span class="footer-legal">fAIrewall is an EU-based product. <a href="mailto:hello@fairewall.ai">Legal inquiries</a></span>
     </div>
   </div></footer>
 
