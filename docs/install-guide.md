@@ -157,7 +157,7 @@ You can toggle Protection ON/OFF from the extension popup at any time.
 
 ### Privacy
 
-All PII detection and masking happens locally on your device. No prompt data is ever sent to fAIrewall servers or any third party. Your audit logs are encrypted and stored locally using AES-256 encryption.
+All PII detection and masking happens locally on your device. fAIrewall does not send prompt data to fAIrewall servers. When you submit a prompt, only the minimized version is sent directly to your chosen AI provider. Your audit logs are encrypted and stored locally using AES-256 encryption.
 
 ---
 
@@ -177,7 +177,7 @@ All PII detection and masking happens locally on your device. No prompt data is 
 ### Prompts not being scanned
 
 - Check that Protection is **ON** in the extension popup
-- Make sure you are on a supported AI provider: ChatGPT, Claude, DeepSeek, or Gemini
+- Make sure you are on a supported AI provider: ChatGPT, Claude, Gemini, DeepSeek, or Copilot
 - Try refreshing the page
 
 ### macOS: "App is damaged" or cannot be opened

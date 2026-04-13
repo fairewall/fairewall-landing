@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3a5f" />
+  <title>Documentation — fAIrewall</title>
+  <meta name="description" content="Installation guide, getting started, and troubleshooting for fAIrewall desktop app and browser extension." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="/" class="site-logo" aria-label="fAIrewall home">
+        <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><linearGradient id="hSG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2d5a87"/><stop offset="100%" stop-color="#1e3a5f"/></linearGradient><linearGradient id="hHG" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5a9ad4"/><stop offset="100%" stop-color="#3d7ab0"/></linearGradient></defs>
+          <path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="url(#hSG)"/><path d="M32 2 L58 10 L58 28 C58 45 45 56 32 62 C19 56 6 45 6 28 L6 10 Z" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/><path d="M32 8 L52 15 L52 28 C52 42 42 50 32 55 C22 50 12 42 12 28 L12 15 Z" fill="none" stroke="url(#hHG)" stroke-width="1.5" opacity="0.6"/>
+          <g fill="#fff"><rect x="29" y="24" width="6" height="24" rx="2"/><rect x="29" y="18" width="16" height="5" rx="2"/><rect x="25" y="30" width="14" height="5" rx="2"/></g>
+          <rect x="28" y="30" width="1" height="5" fill="#24547a"/><rect x="35" y="30" width="1" height="5" fill="#24547a"/>
+          <line x1="27" y1="22" x2="19" y2="38" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="12" r="3" fill="#4ade80" opacity="0.9"/>
+        </svg>
+        fAIrewall
+      </a>
+      <nav><ul class="nav-links" id="navLinks">
+<li><a href="/">Home</a></li><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html" style="color:var(--brand-700)">Docs</a></li>
+        <li><a href="download.html" class="btn btn-primary btn-sm">Download Free Trial</a></li>
+      </ul></nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero"><div class="container">
+    <h1>Documentation</h1>
+    <p>Installation guide, getting started, and troubleshooting for fAIrewall v1.0.0.</p>
+  </div></section>
+
+  <div class="page-content"><div class="container">
+
+    <!-- Quick nav -->
+    <div class="contact-grid" style="margin-bottom:var(--space-8);">
+      <div class="contact-block"><h3><a href="#install-mac" style="color:inherit;text-decoration:none;">macOS Install</a></h3><p style="font-size:14px;color:var(--neutral-500);">DMG installer, 2 min</p></div>
+      <div class="contact-block"><h3><a href="#install-win" style="color:inherit;text-decoration:none;">Windows Install</a></h3><p style="font-size:14px;color:var(--neutral-500);">EXE installer, 2 min</p></div>
+      <div class="contact-block"><h3><a href="#install-ext" style="color:inherit;text-decoration:none;">Browser Extension</a></h3><p style="font-size:14px;color:var(--neutral-500);">Chrome &amp; Edge, 1 min</p></div>
+      <div class="contact-block"><h3><a href="#troubleshooting" style="color:inherit;text-decoration:none;">Troubleshooting</a></h3><p style="font-size:14px;color:var(--neutral-500);">Common issues</p></div>
+    </div>
+
+    <!-- Overview -->
+    <div class="page-section">
+      <h2>Overview</h2>
+      <p>fAIrewall is a local privacy firewall that inspects and minimizes PII from your AI prompts before they reach cloud providers. It consists of two components:</p>
+      <p><strong>Desktop App</strong> — Runs locally on your machine, performs all PII detection, masking, and audit logging.<br>
+      <strong>Browser Extension</strong> — Intercepts prompts from AI provider websites and routes them through the desktop app for sanitization.</p>
+      <p>Both components must be installed and running for full protection. Supported AI providers: ChatGPT, Claude, Gemini, DeepSeek, and Copilot.</p>
+    </div>
+
+    <!-- macOS -->
+    <div class="page-section" id="install-mac">
+      <h2>1. Desktop App — macOS</h2>
+      <p><strong>Requirements:</strong> macOS 12 (Monterey) or later. Apple Silicon (M1/M2/M3/M4) or Intel.</p>
+      <ol style="line-height:1.9;margin-top:var(--space-4);">
+        <li><strong>Download</strong> the latest <code>.dmg</code> file from <a href="download.html">fairewall.ai/download</a>.</li>
+        <li><strong>Open</strong> the downloaded <code>.dmg</code> file. A Finder window will appear with the fAIrewall icon and an Applications folder shortcut.</li>
+        <li><strong>Drag</strong> the fAIrewall icon into the Applications folder.</li>
+        <li><strong>Launch</strong> fAIrewall from your Applications folder (or Spotlight: press <code>Cmd + Space</code>, type "fAIrewall", press Enter).</li>
+        <li><strong>Gatekeeper prompt:</strong> On first launch, macOS may show a dialog saying the app was downloaded from the internet. Click <strong>Open</strong> to proceed. The app is notarized by Apple and safe to run.</li>
+        <li><strong>Verify the tray icon:</strong> After launch, look for the fAIrewall shield icon in your macOS menu bar (top-right area). This confirms the app is running.</li>
+        <li><strong>Keep it running:</strong> fAIrewall runs in the background. Closing the window minimizes it to the menu bar — it does not quit. To fully quit, right-click the tray icon and select <strong>Quit fAIrewall</strong>.</li>
+      </ol>
+      <p style="margin-top:var(--space-4);"><strong>Auto-start at login (optional):</strong> Open the fAIrewall desktop app, go to <strong>Settings</strong> via the hamburger menu, and enable <strong>Start at login</strong>.</p>
+    </div>
+
+    <!-- Windows -->
+    <div class="page-section" id="install-win">
+      <h2>2. Desktop App — Windows</h2>
+      <p><strong>Requirements:</strong> Windows 10 (version 1809) or later, 64-bit (x86_64).</p>
+      <ol style="line-height:1.9;margin-top:var(--space-4);">
+        <li><strong>Download</strong> the latest installer (<code>.exe</code>) from <a href="download.html">fairewall.ai/download</a>.</li>
+        <li><strong>Run</strong> the installer. If Windows SmartScreen shows a warning ("Windows protected your PC"), click <strong>More info</strong>, then click <strong>Run anyway</strong>. This happens because the installer does not yet have an EV code signing certificate.</li>
+        <li><strong>Follow</strong> the installation wizard. The default installation path is fine for most users.</li>
+        <li><strong>Launch</strong> fAIrewall from the Start Menu or Desktop shortcut.</li>
+        <li><strong>Verify the tray icon:</strong> After launch, look for the fAIrewall shield icon in the Windows system tray (bottom-right area, near the clock). You may need to click the <code>^</code> arrow to see it.</li>
+        <li><strong>Keep it running:</strong> fAIrewall runs in the background. Closing the window minimizes it to the system tray — it does not quit. To fully quit, right-click the tray icon and select <strong>Quit fAIrewall</strong>.</li>
+      </ol>
+    </div>
+
+    <!-- Extension -->
+    <div class="page-section" id="install-ext">
+      <h2>3. Browser Extension</h2>
+      <p><strong>Requirements:</strong> Google Chrome (version 120 or later) or Microsoft Edge (Chromium-based). The fAIrewall desktop app must be installed and running.</p>
+
+      <h3 style="margin-top:var(--space-6);">Chrome Web Store (recommended)</h3>
+      <p style="font-size:14px;color:var(--neutral-500);margin-bottom:var(--space-4);">Chrome Web Store listing is pending approval. Use the manual method below until the extension is published.</p>
+      <ol style="line-height:1.9;">
+        <li>Open the Chrome Web Store link (will be available at <a href="download.html">fairewall.ai/download</a>).</li>
+        <li>Click <strong>Add to Chrome</strong>.</li>
+        <li>Confirm by clicking <strong>Add extension</strong> in the popup.</li>
+        <li>The fAIrewall shield icon will appear in your Chrome toolbar.</li>
+      </ol>
+
+      <h3 style="margin-top:var(--space-6);">Manual install (Developer Mode)</h3>
+      <ol style="line-height:1.9;">
+        <li><strong>Download</strong> the extension <code>.zip</code> from <a href="download.html">fairewall.ai/download</a> and extract it to a folder on your computer.</li>
+        <li><strong>Open Chrome</strong> and navigate to <code>chrome://extensions/</code> in the address bar.</li>
+        <li><strong>Enable Developer Mode</strong> using the toggle in the top-right corner of the extensions page.</li>
+        <li><strong>Click "Load unpacked"</strong> and select the extracted extension folder (the one containing <code>manifest.json</code>).</li>
+        <li><strong>Pin the extension:</strong> Click the puzzle piece icon in the Chrome toolbar, find fAIrewall, and click the pin icon to keep it visible.</li>
+        <li><strong>Verify connection:</strong> Open the fAIrewall desktop app. The <strong>Chrome Extension</strong> section should show <strong>Connected</strong> with a green indicator.</li>
+      </ol>
+
+      <h3 style="margin-top:var(--space-6);">Edge installation</h3>
+      <p>The same extension works on Microsoft Edge. Open <code>edge://extensions/</code>, enable <strong>Developer Mode</strong> (bottom-left toggle), click <strong>Load unpacked</strong>, and select the extension folder. The extension works identically to the Chrome version.</p>
+    </div>
+
+    <!-- Verify -->
+    <div class="page-section" id="verify">
+      <h2>4. Verify Your Installation</h2>
+      <p>After installing both components, confirm everything works:</p>
+      <ol style="line-height:1.9;margin-top:var(--space-4);">
+        <li><strong>Desktop app is running</strong> — Shield icon visible in menu bar (macOS) or system tray (Windows).</li>
+        <li><strong>Extension is connected</strong> — Desktop app shows "Chrome Extension: Connected".</li>
+        <li><strong>Protection is ON</strong> — Extension popup shows "Protection: ON".</li>
+        <li><strong>Test prompt</strong> — Go to <a href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a> and type a test prompt containing a fake email like <code>test@example.com</code>. After sending, the fAIrewall overlay should briefly appear confirming the prompt was protected.</li>
+        <li><strong>Check the dashboard</strong> — Open the fAIrewall desktop app. The main view should show the redaction in the last activity section.</li>
+      </ol>
+      <p style="margin-top:var(--space-4);">If all five checks pass, fAIrewall is fully operational.</p>
+    </div>
+
+    <!-- Important info -->
+    <div class="page-section" id="important">
+      <h2>5. Important Information</h2>
+
+      <h3 style="margin-top:var(--space-4);">Free Trial</h3>
+      <p>Your 14-day free trial starts automatically on the first successful launch of the desktop app, once the local protection service is running. No sign-up or credit card is required. Trial data is stored in your operating system's secure storage (macOS Keychain / Windows Credential Manager), which helps resist tampering. When the trial expires and Protection is ON, protected prompts are blocked. Your audit logs and settings are preserved. To learn more about licensing options, visit <a href="/#pricing">fairewall.ai</a>.</p>
+
+      <h3 style="margin-top:var(--space-6);">Protection OFF</h3>
+      <p>When Protection is OFF, prompts are sent directly to AI providers without any PII scanning. fAIrewall does not process or log these prompts. You can toggle Protection ON/OFF from the extension popup at any time.</p>
+
+      <h3 style="margin-top:var(--space-6);">Privacy</h3>
+      <p>All PII detection and masking happens locally on your device. fAIrewall does not send prompt data to fAIrewall servers. When you submit a prompt, only the minimized version is sent directly to your chosen AI provider. Your audit logs are encrypted and stored locally using AES-256 encryption.</p>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="page-section" id="troubleshooting">
+      <h2>6. Troubleshooting</h2>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Extension not connected</button><div class="faq-a">
+        <p>Make sure the fAIrewall desktop app is running (check for the tray icon). Refresh the AI provider page in Chrome. If using manual install, ensure the extension is enabled in <code>chrome://extensions/</code>.</p>
+      </div></div>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">BLOCKED overlay appears</button><div class="faq-a">
+        <p><strong>If trial expired:</strong> Your 14-day trial has ended. Learn more at <a href="/#pricing">fairewall.ai</a>.</p>
+        <p><strong>If in Strict mode:</strong> The desktop app must be running for prompts to be sent. Open the desktop app and verify the tray icon is visible.</p>
+      </div></div>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Prompts not being scanned</button><div class="faq-a">
+        <p>Check that Protection is <strong>ON</strong> in the extension popup. Make sure you are on a supported AI provider: ChatGPT, Claude, Gemini, DeepSeek, or Copilot. Try refreshing the page.</p>
+      </div></div>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">macOS: "App is damaged" or cannot be opened</button><div class="faq-a">
+        <p>This should not happen with the notarized build. If it does: open <strong>System Preferences → Privacy &amp; Security</strong>, scroll down to find the fAIrewall entry, and click <strong>Open Anyway</strong>.</p>
+      </div></div>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Windows: SmartScreen warning</button><div class="faq-a">
+        <p>This is expected until an EV code signing certificate is obtained. Click <strong>More info → Run anyway</strong> to proceed. The app is safe.</p>
+      </div></div>
+
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Overlay does not appear after sending a prompt</button><div class="faq-a">
+        <p>The overlay appears briefly at the bottom-right corner of the browser window. If you do not see it: verify the extension is pinned and active, check that the desktop app is running, and try refreshing the AI provider page. If the issue persists, open Chrome DevTools (<code>F12</code>), go to the Console tab, and look for any fAIrewall-related error messages.</p>
+      </div></div>
+    </div>
+
+    <!-- Need help -->
+    <div style="margin-top:var(--space-12);text-align:center;">
+      <p style="margin-bottom:var(--space-4);">Still need help?</p>
+      <a href="mailto:support@fairewall.ai" class="btn btn-primary">Email support@fairewall.ai</a>
+    </div>
+
+  </div></div>
+
+  <footer class="site-footer"><div class="container">
+    <div class="footer-inner">
+      <div><div class="footer-brand">&copy; 2026 fAIrewall</div><p>Local privacy firewall for AI.</p></div>
+<ul class="footer-links"><li><a href="security.html">Security</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="support.html">Support</a></li><li><a href="download.html">Download</a></li><li><a href="docs.html">Docs</a></li></ul>
+    </div>
+    <div class="footer-meta">
+      <span class="footer-status"><span class="dot"></span> Status: Private RC</span>
+      <span class="footer-disclosure">Chrome extension: not yet listed on Chrome Web Store. Distribution details will follow.</span>
+      <span class="footer-contact">Contact: <a href="mailto:hello@fairewall.ai">hello@fairewall.ai</a></span>
+      <span class="footer-legal">fAIrewall is a product of [ParentCompany]. <a href="mailto:hello@fairewall.ai">Legal inquiries</a></span>
+    </div>
+  </div></footer>
+
+  <script>
+    const header=document.getElementById('siteHeader');window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>10)});
+    const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.classList.toggle('open')});
+    document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));document.querySelectorAll('.faq-q').forEach(b=>b.setAttribute('aria-expanded','false'));if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}})});
+  </script>
+</body>
+</html>
