@@ -66,7 +66,7 @@ To have fAIrewall start automatically when you log in:
 
 1. **Download** the latest installer (`.exe`) from [fairewall.ai/download](https://fairewall.ai/download).
 
-2. **Run** the installer. If Windows SmartScreen shows a warning ("Windows protected your PC"), click **More info**, then click **Run anyway**. This happens because the installer does not yet have an EV code signing certificate.
+2. **Run** the installer. If Windows SmartScreen shows a warning ("Windows protected your PC"), click **More info**, then click **Run anyway**. This happens because the installer is not yet code-signed.
 
 3. **Follow** the installation wizard. The default installation path is fine for most users.
 
@@ -189,7 +189,7 @@ This should not happen with the notarized build. If it does:
 
 ### Windows: SmartScreen warning
 
-This is expected until an EV code signing certificate is obtained. Click **More info → Run anyway** to proceed. The app is safe.
+This is expected until a Windows code signing certificate is obtained. Click **More info → Run anyway** to proceed. The app is safe.
 
 ---
 
